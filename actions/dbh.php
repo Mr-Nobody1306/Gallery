@@ -1,9 +1,9 @@
 <?php
 // Update these values for your PostgreSQL setup
-$servername = 'localhost';
+$servername = 'db.vvlknevbekpxwxkjujlf.supabase.co';
 $port = 5432;
 $username = 'postgres';
-$password = '';
+$password = 'frimpong@76';
 $dbname = 'gallery';
 
 try {
