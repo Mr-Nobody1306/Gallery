@@ -1,19 +1,11 @@
 {
-  "version": 3,
-  "builds": [
-    {
-      "src": "api.php",
-      "use": "@vercel/php"
+  "version": 2,
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.7.0"
     }
-  ],
-  "routes": [
-    {
-      "src": "^/(.*\\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|json|txt|html))$",
-      "dest": "/$1"
-    },
-    {
-      "src": "^/(.*)$",
-      "dest": "/api.php"
-    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/$1" }
   ]
 }
