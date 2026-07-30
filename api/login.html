@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Log-in</title>
+</head>
+<body>
+    <div class="title">Nicole's gallery</div>
+    <section class="container">
+        <section class="form-image">
+            <div class="text">
+                <h1>Welcome Back</h1>
+                <p>Step inside and explore the world of photography <br>Login and enjoy!</p>
+            </div>
+        </section>
+        <section class="form-container">
+            <h2 id="greeting"></h2>
+            <form id="loginForm">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <input type="password" name="password" id="password" placeholder="Key" required>
+                <div id="formError" class="form-message"></div>
+                <button type="submit">Login</button>
+                <p style="margin: 20px;">Don't have an account? <a href="sign_up.html">Sign up</a></p>
+            </form>
+        </section>
+    </section>
+    <script src="actions/ajax.js"></script>
+</body>
+</html>
