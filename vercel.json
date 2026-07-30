@@ -8,15 +8,15 @@
   ],
   "routes": [
     {
-      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|json|txt))$",
+      "src": "^/(.*\\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|json|txt))$",
       "dest": "/$1"
     },
     {
-      "src": "/(.*\\.php)$",
+      "src": "^/(.*\\.php)$",
       "dest": "/$1"
     },
     {
-      "src": "/(.*)",
+      "src": "^/(.*)$",
       "dest": "/index.php"
     }
   ]
